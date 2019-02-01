@@ -13,7 +13,7 @@ FROM alpine:3.9
 
 RUN set -x &&\
     apk add --no-cache mono --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing &&\
-    touch /maFiles &&\
+    makedir /maFiles &&\
     echo "testing" &&\
     apk add --no-cache --virtual=.build-dependencies ca-certificates && \
     cert-sync /etc/ssl/certs/ca-certificates.crt && \
