@@ -22,6 +22,6 @@ RUN set -x &&\
 COPY --from=build /steamguard-cli/build /steamguard-cli
 COPY steamguard /steamguard
 
-COPY maFiles/ /maFiles/
+COPY maFiles /maFiles
 
 CMD /steamguard
