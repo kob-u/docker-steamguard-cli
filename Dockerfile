@@ -9,7 +9,7 @@ RUN set -x &&\
     make
 
 
-FROM alpine:3.8
+FROM alpine:3.9
 
 RUN set -x &&\
     apk add --no-cache mono --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing &&\
